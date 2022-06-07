@@ -5,5 +5,5 @@
 	path = scripts/certificats-laser
 	url = git@github.com:polygphys-emilejetzer/certificats-laser.git
 [submodule "src/outils"]
-	path = src/outils
+	path = src/polygphys/outils
 	url = git@github.com:polygphys-emilejetzer/outils.git
