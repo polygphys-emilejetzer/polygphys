@@ -1,0 +1,9 @@
+[submodule "scripts/inscriptions-sst"]
+	path = scripts/inscriptions-sst
+	url = git@github.com:polygphys-emilejetzer/inscriptions-sst.git
+[submodule "scripts/certificats-laser"]
+	path = scripts/certificats-laser
+	url = git@github.com:polygphys-emilejetzer/certificats-laser.git
+[submodule "src/outils"]
+	path = src/outils
+	url = git@github.com:polygphys-emilejetzer/outils.git
