@@ -17,55 +17,6 @@ Documentation de polygphys
     :special-members:
 
 ####################################
-polygphys.heures
-####################################
-
-.. automodule:: polygphys.heures
-    :members:
-    :undoc-members:
-    :special-members:
-
-####################################
-polygphys.inventaire
-####################################
-
-.. automodule:: polygphys.inventaire
-    :members:
-    :undoc-members:
-    :special-members:
-
-####################################
-polygphys.journal_de_laboratoire
-####################################
-
-.. automodule:: polygphys.journal_de_laboratoire
-    :members:
-    :undoc-members:
-    :special-members:
-
-####################################
-polygphys.laboratoires
-####################################
-
-************************************
-polygphys.laboratoires.PHS8302
-************************************
-
-caracterisation_CV
-====================================
-
-.. automodule:: polygphys.laboratoires.PHS8302.caracterisation_CV.HP4274A
-    :members:
-    :undoc-members:
-    :special-members:
-
-caracterisation_IV
-====================================
-
-cellule_solaire
-====================================
-
-####################################
 polygphys.outils
 ####################################
 
@@ -111,10 +62,10 @@ polygphys.outils.appareils.HP
 
 
 ************************************
-polygphys.outils.database
+polygphys.outils.base_de_donnees
 ************************************
 
-.. automodule:: polygphys.outils.database
+.. automodule:: polygphys.outils.base_de_donnees
     :members:
     :undoc-members:
     :special-members:
@@ -122,7 +73,7 @@ polygphys.outils.database
 dtypes
 ====================================
 
-.. automodule:: polygphys.outils.database.dtypes
+.. automodule:: polygphys.outils.base_de_donnees.dtypes
     :members:
     :undoc-members:
     :special-members:
@@ -130,53 +81,53 @@ dtypes
 gestion
 ====================================
 
-.. automodule:: polygphys.outils.database.gestion
+.. automodule:: polygphys.outils.base_de_donnees.gestion
     :members:
     :undoc-members:
     :special-members:
 
-...database.modeles
+...base_de_donnees.modeles
 ====================================
 
-.. automodule:: polygphys.outils.database.modeles
+.. automodule:: polygphys.outils.base_de_donnees.modeles
     :members:
     :undoc-members:
     :special-members:
 
 ************************************
-polygphys.outils.interface
+polygphys.outils.interface_graphique
 ************************************
 
-.. automodule:: polygphys.outils.interface
+.. automodule:: polygphys.outils.interface_graphique
     :members:
     :undoc-members:
     :special-members:
 
-...interface.html
+...interface_graphique.html
 ====================================
 
-.. automodule:: polygphys.outils.interface.html
+.. automodule:: polygphys.outils.interface_graphique.html
     :members:
     :undoc-members:
     :special-members:
 
-...interface.tableau
+...interface_graphique.tableau
 ====================================
 
-.. automodule:: polygphys.outils.interface.tableau
+.. automodule:: polygphys.outils.interface_graphique.tableau
     :members:
     :undoc-members:
     :special-members:
 
-...interface.tkinter
+...interface_graphique.tkinter
 ====================================
 
-.. automodule:: polygphys.outils.interface.tkinter
+.. automodule:: polygphys.outils.interface_graphique.tkinter
     :members:
     :undoc-members:
     :special-members:
 
-...interface.tkinter.onglets
+...interface_graphique.tkinter.onglets
 ------------------------------------
 
 .. automodule:: polygphys.outils.interface.tkinter.onglets
