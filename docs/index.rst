@@ -13,8 +13,6 @@ Documentation de polygphys
 
 .. automodule:: polygphys
     :members:
-    :undoc-members:
-    :special-members:
 
 ####################################
 polygphys.outils
@@ -22,8 +20,6 @@ polygphys.outils
 
 .. automodule:: polygphys.outils
     :members:
-    :undoc-members:
-    :special-members:
 
 ************************************
 polygphys.outils.config
@@ -31,8 +27,6 @@ polygphys.outils.config
 
 .. automodule:: polygphys.outils.config
     :members:
-    :undoc-members:
-    :special-members:
 
 ************************************
 polygphys.outils.journal
@@ -40,8 +34,6 @@ polygphys.outils.journal
 
 .. automodule:: polygphys.outils.journal
     :members:
-    :undoc-members:
-    :special-members:
 
 ************************************
 polygphys.outils.appareils
@@ -52,13 +44,9 @@ polygphys.outils.appareils.HP
 
 .. automodule:: polygphys.outils.appareils.HP.HP4274A_dev
     :members:
-    :undoc-members:
-    :special-members:
 
 .. automodule:: polygphys.outils.appareils.HP.HP4274A_lab
     :members:
-    :undoc-members:
-    :special-members:
 
 
 ************************************
@@ -67,32 +55,24 @@ polygphys.outils.base_de_donnees
 
 .. automodule:: polygphys.outils.base_de_donnees
     :members:
-    :undoc-members:
-    :special-members:
 
 dtypes
 ====================================
 
 .. automodule:: polygphys.outils.base_de_donnees.dtypes
     :members:
-    :undoc-members:
-    :special-members:
 
 gestion
 ====================================
 
 .. automodule:: polygphys.outils.base_de_donnees.gestion
     :members:
-    :undoc-members:
-    :special-members:
 
 ...base_de_donnees.modeles
 ====================================
 
 .. automodule:: polygphys.outils.base_de_donnees.modeles
     :members:
-    :undoc-members:
-    :special-members:
 
 ************************************
 polygphys.outils.interface_graphique
@@ -100,40 +80,30 @@ polygphys.outils.interface_graphique
 
 .. automodule:: polygphys.outils.interface_graphique
     :members:
-    :undoc-members:
-    :special-members:
 
 ...interface_graphique.html
 ====================================
 
 .. automodule:: polygphys.outils.interface_graphique.html
     :members:
-    :undoc-members:
-    :special-members:
 
 ...interface_graphique.tableau
 ====================================
 
 .. automodule:: polygphys.outils.interface_graphique.tableau
     :members:
-    :undoc-members:
-    :special-members:
 
 ...interface_graphique.tkinter
 ====================================
 
 .. automodule:: polygphys.outils.interface_graphique.tkinter
     :members:
-    :undoc-members:
-    :special-members:
 
 ...interface_graphique.tkinter.onglets
 ------------------------------------
 
 .. automodule:: polygphys.outils.interface.tkinter.onglets
     :members:
-    :undoc-members:
-    :special-members:
 
 ************************************
 polygphys.outils.reseau
@@ -141,16 +111,12 @@ polygphys.outils.reseau
 
 .. automodule:: polygphys.outils.reseau
     :members:
-    :undoc-members:
-    :special-members:
     
 ...reseau.msforms
 =====================================
 
 .. automodule:: polygphys.outils.reseau.msforms
     :members:
-    :undoc-members:
-    :special-members:
 
 Indices and tables
 ==================
