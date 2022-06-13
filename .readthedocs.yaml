@@ -30,9 +30,7 @@ sphinx:
 python:
    install:
     - requirements: requirements.txt
-        - method: pip
     - requirements: docs/requirements.txt
-        - method: pip
 
 sphinx:
     builder: html
