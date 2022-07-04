@@ -7,3 +7,6 @@
 [submodule "src/outils"]
 	path = src/polygphys/outils
 	url = https://github.com/polygphys-emilejetzer/outils.git
+[submodule "scripts/inventaire"]
+	path = scripts/inventaire
+	url = https://github.com/polygphys-emilejetzer/inventaire.git
