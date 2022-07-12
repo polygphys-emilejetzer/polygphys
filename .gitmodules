@@ -1,12 +1,3 @@
-[submodule "scripts/inscriptions-sst"]
-	path = scripts/inscriptions-sst
-	url = https://github.com/polygphys-emilejetzer/inscriptions-sst.git
-[submodule "scripts/certificats-laser"]
-	path = scripts/certificats-laser
-	url = https://github.com/polygphys-emilejetzer/certificats-laser.git
 [submodule "src/outils"]
 	path = src/polygphys/outils
 	url = https://github.com/polygphys-emilejetzer/outils.git
-[submodule "scripts/inventaire"]
-	path = scripts/inventaire
-	url = https://github.com/polygphys-emilejetzer/inventaire.git
