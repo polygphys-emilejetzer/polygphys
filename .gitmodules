@@ -1,3 +1,21 @@
 [submodule "src/outils"]
 	path = src/polygphys/outils
 	url = https://github.com/polygphys-emilejetzer/outils.git
+[submodule "src/polygphys/admin/heures"]
+	path = src/polygphys/admin/heures
+	url = https://github.com/polygphys-emilejetzer/heures.git
+[submodule "src/polygphys/sst/trousses_premiers_soins"]
+	path = src/polygphys/sst/trousses_premiers_soins
+	url = https://github.com/polygphys-emilejetzer/trousses-premiers-soins.git
+[submodule "src/polygphys/admin/inventaire"]
+	path = src/polygphys/admin/inventaire
+	url = https://github.com/polygphys-emilejetzer/inventaire.git
+[submodule "src/polygphys/sst/inscriptions_sst"]
+	path = src/polygphys/sst/inscriptions_sst
+	url = https://github.com/polygphys-emilejetzer/inscriptions-sst.git
+[submodule "src/polygphys/sst/certificats_laser"]
+	path = src/polygphys/sst/certificats_laser
+	url = https://github.com/polygphys-emilejetzer/certificats-laser.git
+[submodule "src/polygphys/atelier/assistant_gcode"]
+	path = src/polygphys/atelier/assistant_gcode
+	url = https://github.com/polygphys-emilejetzer/assistant-gcode.git
