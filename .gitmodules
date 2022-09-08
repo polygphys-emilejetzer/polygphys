@@ -20,5 +20,5 @@
 	path = src/polygphys/atelier/assistant_gcode
 	url = https://github.com/polygphys-emilejetzer/assistant-gcode.git
 [submodule "src/serveur"]
-	path = src/serveur
+	path = src/polygphys/serveur
 	url = https://github.com/polygphys-emilejetzer/serveur_scripts.git
