@@ -22,3 +22,12 @@
 [submodule "src/serveur"]
 	path = src/polygphys/serveur
 	url = https://github.com/polygphys-emilejetzer/serveur_scripts.git
+[submodule "scripts/certificats-laser"]
+	path = scripts/certificats-laser
+	url = /Volumes/Emile_Jetzer/git/certificats-laser.git
+[submodule "scripts/inscriptions-sst"]
+	path = scripts/inscriptions-sst
+	url = /Volumes/Emile_Jetzer/git/inscriptions-sst.git
+[submodule "scripts/inventaire"]
+	path = scripts/inventaire
+	url = /Volumes/Emile_Jetzer/git/inventaire.git
