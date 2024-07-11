@@ -47,7 +47,7 @@ class LaTeXCertificat(Certificat):
     
     def màj(self, nom, matricule):
         rt = 'cert-' + hex(hash(self.modèle + str(dt.now())))[2:]
-        run(['git', 'clone', '-o', 'source', self.modèle rt])
+        run(['git', 'clone', '-o', 'source', str(self.modèle), rt])
         run(['cd', rt])
         run(['./run.zsh', str(nom), str(matricule)])
         run(['cd', '..'])
