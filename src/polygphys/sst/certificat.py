@@ -49,7 +49,7 @@ class LaTeXCertificat(Certificat):
         rt = Path('~/tmp/').expanduser() / ('cert-' + hex(hash(self.modèle + str(dt.now())))[2:])
         run(['git', 'clone', '-o', 'source', str(self.modèle), rt])
         run(['./run.zsh', str(nom), str(matricule)], cwd=rt)
-        self.sortie = rt / 'out' / '{matricule}.pdf'
+        self.sortie = rt / 'out' / f'{matricule}.pdf'
     
     def enregistrer(self, fichier=None):
         if fichier is None:
