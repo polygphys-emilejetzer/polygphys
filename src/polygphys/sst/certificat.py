@@ -46,12 +46,10 @@ class Certificat(object):
 class LaTeXCertificat(Certificat):
     
     def màj(self, nom, matricule):
-        rt = 'cert-' + hex(hash(self.modèle + str(dt.now())))[2:]
+        rt = Path('~/tmp/').expanduser() / ('cert-' + hex(hash(self.modèle + str(dt.now())))[2:])
         run(['git', 'clone', '-o', 'source', str(self.modèle), rt])
-        run(['cd', rt])
-        run(['./run.zsh', str(nom), str(matricule)])
-        run(['cd', '..'])
-        self.sortie = Path(f'./{rt}/out/{matricule}.pdf').resolve()
+        run(['./run.zsh', str(nom), str(matricule)], cwd=rt)
+        self.sortie = rt / 'out' / '{matricule}.pdf'
     
     def enregistrer(self, fichier=None):
         if fichier is None:
