@@ -46,16 +46,13 @@ class Certificat(object):
 class LaTeXCertificat(Certificat):
     
     def màj(self, nom, matricule):
-        rt = Path('~/tmp/').expanduser() / ('cert-' + hex(hash(self.modèle + str(dt.now())))[2:])
-        run(['git', 'clone', '-o', 'source', str(self.modèle), rt])
-        run(['./run.zsh', str(nom), str(matricule)], cwd=rt)
-        self.sortie = rt / 'out' / f'{matricule}.pdf'
+        self.rt = Path('~/tmp/').expanduser() / ('cert-' + hex(hash(self.modèle + str(dt.now())))[2:])
+        run(['git', 'clone', '-o', 'source', str(self.modèle), self.rt])
+        run(['./run.zsh', str(nom), str(matricule)], cwd=self.rt)
+        self.sortie = self.rt / 'out' / f'{matricule}.pdf'
     
-    def enregistrer(self, fichier=None):
-        if fichier is None:
-            fichier = self.sortie
-        
-        return fichier
+    def enregistrer(self, fichier):
+        self.sortie.rename(fichier)
 
 class PPTCertificat(Certificat):
     import pptx
