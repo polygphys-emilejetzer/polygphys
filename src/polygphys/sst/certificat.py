@@ -31,17 +31,23 @@ class SSTLaserCertificatsConfig(MSFormConfig):
     def default(self):
         return (Path(__file__).parent / 'nouveau_certificat.cfg').open().read()
 
-
-class Certificat(object):
+class Document(object):
     
-    def __init__(self, modèle):
-        self.modèle = modèle
+    def __init__(self, modèle: Path, sortie: Path = None):
+        self.modèle: Path = modèle
+        self.sortie: Path = sortie
     
-    def màj(self, nom, matricule):
+    def màj(self, *args, **kargs):
         pass
     
     def enregistrer(self, fichier):
-        pass
+        self.sortie.rename(fichier)
+
+class Certificat(Document):
+    pass
+
+class Rapport(Document):
+    pass
 
 class LaTeXCertificat(Certificat):
     
@@ -50,9 +56,21 @@ class LaTeXCertificat(Certificat):
         run(['git', 'clone', '-o', 'source', str(self.modèle), self.rt])
         run(['./run.zsh', str(nom), str(matricule)], cwd=self.rt)
         self.sortie = self.rt / 'out' / f'{matricule}.pdf'
+
+class LaTeXRapport(Rapport):
     
-    def enregistrer(self, fichier):
-        self.sortie.rename(fichier)
+    def màj(self, dfs: dict[str, pd.DataFrame]):
+        self.rt = Path('~/tmp').expanduser() / ('insp-' + hex(hash(self.modèle + str(dt.now())))[2:])
+        run(['git', 'clone', '-o', 'source', str(self.modèle), self.rt])
+        
+        for c, df in dfs.items():
+            if isinstance(df, pd.DataFrame):
+                df.style.to_latex(self.rt/c, column_format='p{3in}l')
+            else:
+                print(df, file=open(self.rt/c, 'w'))
+        
+        run(['./run.zsh'], cwd=self.rt)
+        self.sortie = self.rt / 'out' / 'rapport.pdf'
 
 class PPTCertificat(Certificat):
     import pptx
